@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "pokeFont";
+  src: url("../Fonts/PokemonGb-RAeo.ttf");
+}
+
+body {
+  /* background: rgb(241, 244, 249);
+  background: linear-gradient(
+    -45deg,
+    rgba(241, 244, 249, 1) 0%,
+    rgba(246, 248, 252, 1) 100%
+  ); */
+  background: rgb(131, 165, 196);
+  background: linear-gradient(
+    -45deg,
+    rgba(131, 165, 196, 1) 47%,
+    rgba(246, 248, 252, 1) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: pokefont;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.pokedex {
+  background-color: white;
+  width: 25rem;
+  height: 40rem;
+  border-radius: 15px;
+  background-image: url("../Images/poke-minimal.svg");
+  background-repeat: no-repeat;
+  background-position: left 23vw bottom 40vh;
+}
+
+.poke-pattern {
+  width: 100%;
+  display: block;
+}
