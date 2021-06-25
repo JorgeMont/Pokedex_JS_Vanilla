@@ -16,14 +16,37 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <main>
+    <main class="main-flex"></main>
+    <template class="template-card">
       <section class="pokedex">
-        <!-- <img
-          src="./Images/poke-minimal.svg"
-          alt="poke-pattern"
-          class="poke-pattern"
-        /> -->
+        <div class="pokedex__search-bar">
+          <input type="text" />
+        </div>
+        <div class="pokemon">
+          <div class="pokemon__head">
+            <h1>Nombre</h1>
+            <h3>Number</h3>
+            <div class="pk-types">
+              <div class="pk-types__type">Type</div>
+            </div>
+          </div>
+          <div class="pokemon__picture">
+            <img
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg"
+              alt="pokemon-picture"
+            />
+          </div>
+          <div class="pokemon__info">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+              quasi, eius recusandae excepturi, placeat magni exercitationem,
+              distinctio sed repellat voluptas delectus hic commodi nisi iure
+              saepe nam porro fuga inventore!
+            </p>
+          </div>
+        </div>
       </section>
-    </main>
+    </template>
+    <script src="./JS/app.js"></script>
   </body>
 </html>
