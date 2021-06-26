@@ -19,15 +19,15 @@
     <main class="main-flex"></main>
     <template class="template-card">
       <section class="pokedex">
-        <div class="pokedex__search-bar">
+        <!-- <div class="pokedex__search-bar">
           <input type="text" />
-        </div>
+        </div> -->
         <div class="pokemon">
           <div class="pokemon__head">
             <h1>Nombre</h1>
             <h3>Number</h3>
             <div class="pk-types">
-              <div class="pk-types__type">Type</div>
+              <span class="pk-types__type">Type</span>
             </div>
           </div>
           <div class="pokemon__picture">
@@ -37,12 +37,37 @@
             />
           </div>
           <div class="pokemon__info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-              quasi, eius recusandae excepturi, placeat magni exercitationem,
-              distinctio sed repellat voluptas delectus hic commodi nisi iure
-              saepe nam porro fuga inventore!
-            </p>
+            <div class="tab-header">
+              <div class="active"><i class="fa fa-code"></i> Stats</div>
+              <div><i class="fa fa-pencil-square-o"></i> Moves</div>
+            </div>
+            <div class="tab-indicator"></div>
+            <div class="tab-body">
+              <div class="active">
+                <!-- Stats -->
+                <article class="stat-container">
+                  <ul class="stat-container__list">
+                    <li><span>HP</span> <span class="hp">45</span></li>
+                    <li><span>Attack</span> <span class="atk">45</span></li>
+                    <li><span>Defense</span> <span class="def">45</span></li>
+                    <li><span>Sp. Atk</span> <span class="spAtk">45</span></li>
+                    <li><span>Sp. Def</span> <span class="spDef">45</span></li>
+                    <li><span>Speed</span> <span class="speed">45</span></li>
+                  </ul>
+                </article>
+              </div>
+              <!-- Moves -->
+              <div>
+                <article class="stat-container">
+                  <ul id="movesList" class="stat-container__list">
+                    <li><span>Mov 1: </span><span class="movOne">a</span></li>
+                    <li><span>Mov 2: </span><span class="movTwo">a</span></li>
+                    <li><span>Mov 3: </span><span class="movThree">a</span></li>
+                    <li><span>Mov 4: </span><span class="movFour">a</span></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
