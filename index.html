@@ -16,12 +16,19 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <main class="main-flex"></main>
-    <template class="template-card">
+    <section class="control">
+      <div class="control__button" id="prevButton">
+        <img src="./Images/back.svg" alt="prev_button" />
+      </div>
+      <div class="control__button" id="suffleButton">
+        <img src="./Images/shuffle.svg" alt="shuffle_button" />
+      </div>
+      <div class="control__button" id="nextButton">
+        <img src="./Images/next.svg" alt="next_button" />
+      </div>
+    </section>
+    <main class="main-flex">
       <section class="pokedex">
-        <!-- <div class="pokedex__search-bar">
-          <input type="text" />
-        </div> -->
         <div class="pokemon">
           <div class="pokemon__head">
             <h1>Nombre</h1>
@@ -31,10 +38,7 @@
             </div>
           </div>
           <div class="pokemon__picture">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg"
-              alt="pokemon-picture"
-            />
+            <img src="" alt="pokemon-picture" />
           </div>
           <div class="pokemon__info">
             <div class="tab-header">
@@ -71,7 +75,7 @@
           </div>
         </div>
       </section>
-    </template>
+    </main>
     <script src="./JS/app.js"></script>
   </body>
 </html>
